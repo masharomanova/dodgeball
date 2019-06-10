@@ -58,24 +58,19 @@ const arrOfPeople = [{
 ]
 
 
-const listOfPlayers = []
+let listOfPlayers = []
 const blueTeam = []
 const redTeam = []
 
 class Player {
   constructor(id, name, age, skillSet, placeBorn, team) {
     // your code here
-      this.team = null
       this.id = id;
       this.name = name;
       this.age = age;
       this.skillSet = skillSet;
       this.placeBorn = placeBorn;
-      this.canThrowBall = canThrowBall;
-      this.canDodgeBall = canDodgeBall;
-      this.hasPaid = hasPaid;
-      this.isHealthy = isHealthy;
-      this.yearsExperience = yearsExperience;
+      this.team = null
   }
   assignToTeam(team) {
       this.team = team;
